@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+body{
+	background: #F0F8FF;
+}
+body,button,h1, h2, h3, h4, h5, h6, hr,input,li,p,td,th,ul {
+    margin: 0;
+    padding: 0;
+}
+li{
+	list-style-type:none;}
+a{
+	text-decoration:none;}
+.ml{
+	float:left;
+}
+.middle{
+	padding:10px 20px 10px 20px;
+	margin:0 auto;
+	width:64%;
+	height:300px;
+}

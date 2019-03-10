@@ -1,0 +1,199 @@
+@CHARSET "UTF-8";
+body{
+	background: #F0F8FF;
+}
+body,button,h1, h2, h3, h4, h5, h6, hr,input,li,p,td,th,ul {
+    margin: 0;
+    padding: 0;
+}
+li{
+	list-style-type:none;}
+a{	
+	text-decoration:none;}
+.ml{
+	float:left;
+}
+.middle{
+	padding:10px 20px 10px 20px;
+	margin:0 auto;
+	width:64%;
+	height:300px;
+}
+
+.modify{
+	width:50%;
+	height: 300px;
+	margin: 0 auto;
+	float: left;}
+.modify-pass{
+	padding-top:10px;
+	padding-left:100px;
+	width: 100%;
+	height:100%;
+	margin: 0 auto;}
+.modify-pass h3{
+	color: #a4b5c6;
+	font-size: 24px;
+	font-weight: 100;
+	display: block;
+	height: 30px;
+	width: 100%;
+}
+.modify-title{
+	width:80%;
+	margin: 0 auto;
+	height: 40px;
+	background: #F0F8FF;
+	line-height: 40px;
+	font-size:18px;
+	border-radius:5px;
+	text-align: center; }
+.modify-input li{
+	width: 90%;
+	height:40px;
+	line-height:40px;
+	margin:15px auto;
+	text-align: center;}
+.modify-input input{
+	height:30px;
+	line-height:30px;
+	left:90px;
+	float:left;
+	width: 60%;
+	margin-left: 10px;
+	margin-top:5px;
+	font-size: 18px;}	
+.al{
+	margin-left:20px;
+	float:left;
+	width:25%;
+	text-align: left;
+	height: 40px;
+	line-height:40px; 
+	font-size: 18px;}
+.tr{
+	width: 70%;
+	height: 450px;
+	margin: 0 auto;
+	background: #FFF;
+	padding: 40px;
+}
+.fl{
+	float: right;
+}
+#cartTable{
+	width: 90%;
+	height: 400px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.goods img{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-left: 20px;
+}
+th, td {
+	text-align:center;
+    border: 1px solid #CADEFF;
+}
+th {
+    background: #e2f2ff;
+    border-top: 2px solid #a7cbff;
+    height: 40px;
+    line-height: 40px;
+}
+td {
+	height:80px;
+    padding: 10px;
+}
+.checkbox {
+    width: 10%;
+}
+.goods {
+    width: 33%;
+}
+.goods span {
+    width: 70%;
+    height:100%;
+    line-height:60px;
+    float: left;
+}
+.price {
+    width:15%;
+}
+.count {
+    width: 15%;
+    padding-left:2%;
+}
+.count .add, .count input, .count .reduce {
+    float: left;
+    position: relative;
+    z-index: 0;
+}
+.count .add, .count .reduce {
+    height: 25px;
+    width: 20px;
+    background: #c3c3c3;
+    text-align: center;
+    line-height: 25px;
+    color: #000;
+}
+.count .add:hover, .count .reduce:hover {
+    z-index: 3;
+    cursor: pointer;
+}
+.count input {
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    z-index: 2;
+}
+.subtotal {
+    width: 15%;
+    color: red;
+    font-weight: bold;
+}
+.operation {
+    width: 12%;
+}
+.operation .delete:hover, #deleteAll:hover{
+    cursor: pointer;
+    color: red;
+    text-decoration: underline;
+}
+.foot {
+    width: 90%;
+    margin:0 auto;
+    margin-top: 10px;
+    height: 50px;
+    line-height:50px;
+    background-color: #dfdfdf;
+}
+.foot .select-all {
+    width: 10%;
+    margin: 0 25px;
+}
+.foot .closing {
+    width: 12%;
+    text-align: center;
+    font-weight: 500;
+    background:#c3c3c3;
+    cursor: pointer;
+}
+.foot .total{
+    margin: 0 20px;
+}
+.foot  #priceTotal, .foot #selectedTotal {
+    color: red;
+}
+.foot .selected {
+    cursor: pointer;
+}
+#selectedTotal{
+	margin: 0 10px;
+}
+.delete{
+	color: #000;
+}

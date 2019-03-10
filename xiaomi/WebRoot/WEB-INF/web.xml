@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name></display-name>
+  <filter>
+    <filter-name>Encode</filter-name>
+    <filter-class>filter.Encode</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Encode</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>LoginCheck</filter-name>
+    <filter-class>filter.LoginCheck</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginCheck</filter-name>
+    <url-pattern>/public/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginCheck</filter-name>
+    <url-pattern>/admin_boss/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginCheck</filter-name>
+    <url-pattern>/admin_business/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginCheck</filter-name>
+    <url-pattern>/admin_member/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginCheck</filter-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginCheck</filter-name>
+    <url-pattern>/ModifyServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginCheck</filter-name>
+    <url-pattern>/CommServlet</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>User_Power</filter-name>
+    <filter-class>filter.User_Power</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>User_Power</filter-name>
+    <url-pattern>/admin_member/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>User_Power</filter-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>User_Power</filter-name>
+    <url-pattern>/ModifyServlet</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>servlet.RegServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyServlet</servlet-name>
+    <servlet-class>servlet.ModifyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CommServlet</servlet-name>
+    <servlet-class>servlet.comm.CommServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegComm</servlet-name>
+    <servlet-class>servlet.comm.RegComm</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddComm</servlet-name>
+    <servlet-class>servlet.comm.AddComm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/RegServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyServlet</servlet-name>
+    <url-pattern>/ModifyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommServlet</servlet-name>
+    <url-pattern>/CommServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegComm</servlet-name>
+    <url-pattern>/RegComm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddComm</servlet-name>
+    <url-pattern>/AddComm</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
